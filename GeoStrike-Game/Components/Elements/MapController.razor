@@ -1,0 +1,29 @@
+﻿ @rendermode InteractiveServer 
+ @inject IJSRuntime JS 
+
+<div id="chartdiv"></div>
+
+<style> 
+    #chartdiv { 
+    width: 100%; 
+    height: 500px; 
+    } 
+</style> 
+
+@code {
+    private bool mapInitialized = false;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender && !mapInitialized)
+        {
+            mapInitialized = true;
+            await mapGenerate();
+        }
+    }
+
+    public async Task mapGenerate() 
+    { 
+         await JS.InvokeVoidAsync("CreateMapChart"); 
+    } 
+ } 

@@ -1,0 +1,41 @@
+﻿@rendermode InteractiveServer
+@inject IJSRuntime JS
+
+<div class="questionplace">
+    <p>@question, @currentCountry</p>
+    <button class="button" @onclick=OnInitialized>confirm</button>
+    <p class="country"></p>
+</div>
+
+
+<style>
+    .questionplace {
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    }
+</style>
+
+@code {
+    public string question = "Loading...";
+    public string currentCountry = "N/A";
+
+    protected override void OnInitialized()
+    {
+        question = generateQuestion();
+    }
+
+    public string generateQuestion()
+    {
+        string[] questions = { "question 1", "question 2", "question 3", "question 4", "question 5" };
+
+        Random random = new Random();
+        int number = random.Next(questions.Length);
+
+        question = questions[number];
+        return question;
+    }
+}
