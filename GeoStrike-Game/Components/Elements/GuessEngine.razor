@@ -1,41 +1,42 @@
 ﻿@rendermode InteractiveServer
-@inject IJSRuntime JS
 
 <div class="questionplace">
-    <p>@question, @currentCountry</p>
-    <button class="button" @onclick=OnInitialized>confirm</button>
+    <p>@category</p>
+    <p>@question</p>
+    <p>@correctAnswer</p>
+    <button class="button" @onclick=generateQuestion>confirm</button>
     <p class="country"></p>
 </div>
 
-
-<style>
-    .questionplace {
-    height: 300px;
-    width: 100%;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 20px;
-    }
-</style>
-
 @code {
-    public string question = "Loading...";
-    public string currentCountry = "N/A";
 
-    protected override void OnInitialized()
+    public string category = "none";
+    public string question = "none";
+    public string correctAnswer = "none";
+    public List<Questions> questions;
+
+    public class Questions
     {
-        question = generateQuestion();
+        public string question { get; set; }
+        public string correctAnswer { get; set; }
+        public string category { get; set; }
     }
 
-    public string generateQuestion()
+    protected override async Task OnInitializedAsync()
     {
-        string[] questions = { "question 1", "question 2", "question 3", "question 4", "question 5" };
+        string json = System.IO.File.ReadAllText("wwwroot/data/questions.json");
+        questions = JsonConvert.DeserializeObject<List<Questions>>(json);
+        generateQuestion();
+    }
 
+    public void generateQuestion()
+    {
         Random random = new Random();
-        int number = random.Next(questions.Length);
+        int number = random.Next(questions.Count);
 
-        question = questions[number];
-        return question;
+        question = questions[number].question;
+        correctAnswer = questions[number].correctAnswer;
+        category = questions[number].category;
     }
+
 }
