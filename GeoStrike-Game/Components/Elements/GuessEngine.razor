@@ -1,19 +1,17 @@
 ﻿@rendermode InteractiveServer
 
-<div class="questionplace">
+<div class="question-container">
     <p>@category</p>
     <p>@question</p>
-    <p>@correctAnswer</p>
-    <button class="button" @onclick=generateQuestion>confirm</button>
-    <p class="country"></p>
+    <button @onclick=SetQuestionContent>confirm</button>
 </div>
 
 @code {
+    public List<Questions> QuestionsList;
 
-    public string category = "none";
-    public string question = "none";
-    public string correctAnswer = "none";
-    public List<Questions> questions;
+    public string question = "";
+    public string correctAnswer = "";
+    public string category = "";
 
     public class Questions
     {
@@ -25,18 +23,17 @@
     protected override async Task OnInitializedAsync()
     {
         string json = System.IO.File.ReadAllText("wwwroot/data/questions.json");
-        questions = JsonConvert.DeserializeObject<List<Questions>>(json);
-        generateQuestion();
+        QuestionsList = JsonConvert.DeserializeObject<List<Questions>>(json);
+        SetQuestionContent();
     }
 
-    public void generateQuestion()
+    public void SetQuestionContent()
     {
         Random random = new Random();
-        int number = random.Next(questions.Count);
+        int number = random.Next(QuestionsList.Count);
 
-        question = questions[number].question;
-        correctAnswer = questions[number].correctAnswer;
-        category = questions[number].category;
+        question = QuestionsList[number].question;
+        correctAnswer = QuestionsList[number].correctAnswer;
+        category = QuestionsList[number].category;
     }
-
 }

@@ -1,4 +1,5 @@
-﻿.questionplace {
+﻿
+.question-container {
     position: fixed;
     height: 300px;
     width: 100%;
@@ -6,4 +7,9 @@
     margin-top: 50px;
     margin-bottom: 50px;
     font-size: 20px;
+}
+
+#chartdiv {
+    width: 100%;
+    height: 500px;
 }

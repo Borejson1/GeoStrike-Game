@@ -1,5 +1,5 @@
-
-.top-menu {
+﻿
+.navigation-bar {
     position: fixed;
     top: 0;
     left: 0;
@@ -8,23 +8,20 @@
     background-color: #333;
     display: flex;
     align-items: center;
-    padding: 0 1rem;
+    padding: 30px;
     z-index: 1000;
 }
 
-.menu-link {
+.navigation-bar-link {
     color: white;
     text-decoration: none;
     margin-right: 1rem;
     font-size: 1rem;
 }
 
-.menu-link:hover {
-    text-decoration: underline;
+.main-content-container{
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 
-.logo-style{
-    width: 20%;
-    height: 20%;
-}

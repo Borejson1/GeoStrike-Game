@@ -4,18 +4,18 @@
 <div id="chartdiv"></div>
 
 @code {
-    private bool mapInitialized = false;
+    private bool MapInitialized = false;
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        if (firstRender && !mapInitialized)
+        if (firstRender && !MapInitialized)
         {
-            mapInitialized = true;
-            await mapGenerate();
+            MapInitialized = true;
+            await GenerateChart();
         }
     }
 
-    public async Task mapGenerate() 
+    public async Task GenerateChart() 
     { 
          await JS.InvokeVoidAsync("CreateMapChart"); 
     } 

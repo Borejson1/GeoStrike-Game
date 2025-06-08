@@ -1,5 +1,6 @@
 ﻿
-function CreateMapChart(callbackName, dotNetHelper) {
+function CreateMapChart() {
+
     am5.ready(function () {
 
         var root = am5.Root.new("chartdiv");
@@ -20,21 +21,8 @@ function CreateMapChart(callbackName, dotNetHelper) {
             return !["SM"].includes(feature.id);
         });
 
-        //polygonSeries.events.on("datavalidated", function () {
-        //    polygonSeries.mapPolygons.each(function (polygon) {
-        //        var id = polygon.dataItem.dataContext.id;
-        //        if (id === "SM") { // San Marino
-        //            polygon.setAll({
-        //                visible: false,
-        //                interactive: false
-        //            });
-        //        }
-        //    });
-        //});
-
         var polygonSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {
-            //geoJSON: am5geodata_worldLow,
-            geoJSON: customGeoJSON,
+            geoJSON: am5geodata_worldLow,
             exclude: ["AQ"],
         }));
 
@@ -81,6 +69,5 @@ function CreateMapChart(callbackName, dotNetHelper) {
         })
 
         chart.appear(1000, 100);
-
     }); 
 }

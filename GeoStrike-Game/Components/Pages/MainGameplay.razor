@@ -3,17 +3,9 @@
 
 <PageTitle>MainGameplay</PageTitle>
 
-<h1>Number</h1>
-
-<p role="status">Code Number: @currentCount</p>
-
-<button class="btn btn-primary" @onclick="() => IncrementCount(5)">Click me</button>
+<MapController></MapController>
+<GuessEngine></GuessEngine>
 
 @code {
-    private int currentCount = 0;
-
-    private void IncrementCount(int number)
-    {
-        currentCount = number;
-    }
+    
 }
