@@ -1,22 +1,117 @@
-﻿ @rendermode InteractiveServer 
- @inject IJSRuntime JS 
+﻿@rendermode InteractiveServer
+@inject IJSRuntime JS
+@inject ProtectedLocalStorage ProtectedLocalStore
 
-<div id="chartdiv"></div>
+<div class="map-controller-container">
+
+    <div id="chartdiv"></div>
+
+    <div class="question-container">
+        <p class="question-category">@QuestionCategory</p>
+        <p class="question-text">@QuestionText</p>
+    </div>
+
+    <div class="player-score-container">
+        <p class="player-score">Player score: @PlayerGlobalScore</p>
+        <p class="player-best-score">Player all-time score: @PlayerBestScore</p>
+    </div>
+</div>
 
 @code {
-    private bool MapInitialized = false;
+    public List<Question> QuestionsList = new();
+
+    public int PlayerGlobalScore = 0;
+    public int PlayerBestScore = 0;
+    public string QuestionCategory = "";
+    public string QuestionText = "";
+
+    private DotNetObjectReference<MapController>? dotNetHelper;
+
+    private bool mapInitialized = false;
+    private bool bestScoreInitialized = false;
+    private string selectedCountry = "";
+    private string correctAnswer = "";
+
+    public class Question
+    {
+        public string question { get; set; } = "";
+        public string correctAnswer { get; set; } = "";
+        public string category { get; set; } = "";
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        dotNetHelper = DotNetObjectReference.Create(this);
+
+        string json = await System.IO.File.ReadAllTextAsync("wwwroot/data/questions.json");
+        QuestionsList = JsonConvert.DeserializeObject<List<Question>>(json);
+        SetQuestionValues();
+    }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        if (firstRender && !MapInitialized)
+        if (firstRender)
         {
-            MapInitialized = true;
-            await GenerateChart();
+            if(!bestScoreInitialized)
+            {
+                await LoadBestScoreCount();
+                bestScoreInitialized = true;
+                StateHasChanged();
+            }
+            if(!mapInitialized)
+            {
+                mapInitialized = true;
+                await JS.InvokeVoidAsync("CreateMapChart", dotNetHelper);
+            }
         }
     }
 
-    public async Task GenerateChart() 
-    { 
-         await JS.InvokeVoidAsync("CreateMapChart"); 
-    } 
- } 
+    public void SetQuestionValues()
+    {
+        if (QuestionsList.Count == 0) return;
+
+        var random = new Random();
+        int index = random.Next(QuestionsList.Count);
+
+        QuestionText = QuestionsList[index].question;
+        correctAnswer = QuestionsList[index].correctAnswer;
+        QuestionCategory = QuestionsList[index].category;
+        StateHasChanged();
+    }
+
+    [JSInvokable]
+    public void CheckAnswer(string countryName)
+    {
+        selectedCountry = countryName;
+
+        if (selectedCountry == correctAnswer)
+        {
+            PlayerGlobalScore += 1;
+            if(PlayerGlobalScore > PlayerBestScore)
+            {
+                PlayerBestScore = PlayerGlobalScore;
+                UpdateBestScoreCount();
+            }
+        }
+        else
+        {
+            PlayerGlobalScore = 0;
+        }
+        SetQuestionValues();
+        StateHasChanged();
+    }
+
+    private async Task UpdateBestScoreCount()
+    {
+        await ProtectedLocalStore.SetAsync("playerBestScore", PlayerBestScore);
+    }
+
+    private async Task LoadBestScoreCount()
+    {
+        var result = await ProtectedLocalStore.GetAsync<int>("playerBestScore");
+        if (result.Success)
+        {
+            PlayerBestScore = result.Value;
+        }
+    }
+}

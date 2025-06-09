@@ -1,5 +1,5 @@
 ﻿
-function CreateMapChart() {
+function CreateMapChart(dotNetHelper) {
 
     am5.ready(function () {
 
@@ -28,7 +28,8 @@ function CreateMapChart() {
 
         polygonSeries.mapPolygons.template.events.on("click", function (ev) {
             var countryName = ev.target.dataItem.dataContext.name;
-            console.log("Kliknieto w: ", countryName);
+            console.log("Pressed on: ", countryName);
+            dotNetHelper.invokeMethodAsync("CheckAnswer", countryName);
         });
 
         polygonSeries.mapPolygons.template.setAll({
