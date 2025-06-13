@@ -1,15 +1,124 @@
 ﻿
-.map-controller-container {
-    position: fixed;
-    height: 300px;
-    width: 100%;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 20px;
+.map-controller {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 78vh;
+}
+
+.question {
+    width: 30%;
+    height: 100%;
+    justify-content: center; 
+}
+
+.question-text-container {
+    height: 70%;
+    margin-bottom: 1.4vh;
+}
+
+.question-up-section{
+    height: 80%;
+}
+
+.game-mode {
+    color: forestgreen;
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+.question-down-section{
+    height: 20%;
+}
+
+.to-skip {
+    font-size: 0.7vmax;
+    margin-bottom: 0vh;
+}
+
+.question-category{
+    font-size: 2vh;
+    padding-bottom: 0.1vh;
+}
+
+.question-text{
+    font-size: 2vmax;
+}
+
+.question-buttons {
+    display: flex;
+    align-items: center;
+    align-items: flex-end;
+    gap: 1vh;
+}
+
+.player-score{
+    margin-top: 2vh;
+}
+
+.player-score-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    box-sizing: border-box;
+    height: 28%;
+}
+
+.player-score, .player-best-score {
+    font-size: 1.2vmax;
+}
+
+.map {
+    width: 70%;
+    height: 100%;
+    padding-left: 1.5vh;
 }
 
 #chartdiv {
     width: 100%;
-    height: 500px;
+    height: 100%;
+}
+
+.player-score-container, .question-text-container {
+    backdrop-filter: blur(25px) saturate(200%);
+    -webkit-backdrop-filter: blur(25px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    max-width: 100%;
+    padding: 5vh;
+    word-wrap: break-word;
+}
+
+.restart-button, .skip-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: forestgreen;
+    outline: 3px forestgreen solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+    padding: 5px 10px;
+}
+
+.restart-button .button-text, .skip-button .button-text {
+    color: white;
+    font-weight: 500;
+    font-size: 1em;
+    transition: 400ms;
+}
+
+.restart-button:hover, .skip-button:hover {
+    background-color: transparent;
+}
+
+.restart-button:hover .button-text, .skip-button:hover .button-text {
+   color: forestgreen;
 }

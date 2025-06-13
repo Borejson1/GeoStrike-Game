@@ -1,151 +1,151 @@
 ﻿[
     {
-        "question": "What is China",
+        "question": "Which country has the largest population in the world?",
         "correctAnswer": "China",
-        "category": "Geography"
+        "category": "General Knowledge"
     },
     {
-        "question": "What is Russia",
+        "question": "Which is the largest country by land area?",
         "correctAnswer": "Russia",
         "category": "Geography"
     },
     {
-        "question": "What is United States",
+        "question": "Which country has 50 states and the Grand Canyon?",
         "correctAnswer": "United States",
-        "category": "Geography"
+        "category": "General Knowledge"
     },
     {
-        "question": "What is Brazil",
+        "question": "Where is the Amazon Rainforest located?",
         "correctAnswer": "Brazil",
-        "category": "Geography"
+        "category": "Nature"
     },
     {
-        "question": "What is Australia",
+        "question": "Which country is also a continent?",
         "correctAnswer": "Australia",
         "category": "Geography"
     },
     {
-        "question": "What is Canada",
+        "question": "Which country borders the USA to the north?",
         "correctAnswer": "Canada",
         "category": "Geography"
     },
     {
-        "question": "What is India",
+        "question": "Where is the Taj Mahal located?",
         "correctAnswer": "India",
-        "category": "Geography"
+        "category": "Culture"
     },
     {
-        "question": "What is Germany",
+        "question": "Which country is known for Oktoberfest and the Black Forest?",
         "correctAnswer": "Germany",
-        "category": "Geography"
+        "category": "Culture"
     },
     {
-        "question": "What is France",
+        "question": "Which country is famous for the Eiffel Tower?",
         "correctAnswer": "France",
-        "category": "Geography"
+        "category": "Culture"
     },
     {
-        "question": "What is Italy",
+        "question": "Where is the city of Rome located?",
         "correctAnswer": "Italy",
-        "category": "Geography"
+        "category": "History"
     },
     {
-        "question": "What is Spain",
+        "question": "Which country is known for flamenco dancing and bullfighting?",
         "correctAnswer": "Spain",
-        "category": "Geography"
+        "category": "Culture"
     },
     {
-        "question": "What is Mexico",
+        "question": "Which country is directly south of the United States?",
         "correctAnswer": "Mexico",
         "category": "Geography"
     },
     {
-        "question": "What is Argentina",
+        "question": "Where is Patagonia partially located?",
         "correctAnswer": "Argentina",
-        "category": "Geography"
+        "category": "Nature"
     },
     {
-        "question": "What is Japan",
+        "question": "Which country has Mount Fuji and bullet trains?",
         "correctAnswer": "Japan",
-        "category": "Geography"
+        "category": "General Knowledge"
     },
     {
-        "question": "What is South Korea",
+        "question": "Which country is famous for K-pop and kimchi?",
         "correctAnswer": "South Korea",
-        "category": "Geography"
+        "category": "Culture"
     },
     {
-        "question": "What is United Kingdom",
+        "question": "Which country includes England, Scotland, Wales, and Northern Ireland?",
         "correctAnswer": "United Kingdom",
         "category": "Geography"
     },
     {
-        "question": "What is Ukraine",
+        "question": "Which European country has Kyiv as its capital?",
         "correctAnswer": "Ukraine",
         "category": "Geography"
     },
     {
-        "question": "What is Poland",
+        "question": "Which country is famous for pierogi and Chopin?",
         "correctAnswer": "Poland",
-        "category": "Geography"
+        "category": "Culture"
     },
     {
-        "question": "What is Norway",
+        "question": "Which country is known for fjords and the Northern Lights?",
         "correctAnswer": "Norway",
-        "category": "Geography"
+        "category": "Nature"
     },
     {
-        "question": "What is Sweden",
+        "question": "Where is the region of Lapland located?",
         "correctAnswer": "Sweden",
         "category": "Geography"
     },
     {
-        "question": "What is Finland",
+        "question": "Which country has thousands of lakes and Saunas?",
         "correctAnswer": "Finland",
-        "category": "Geography"
+        "category": "Nature"
     },
     {
-        "question": "What is Egypt",
+        "question": "Where are the Pyramids of Giza located?",
         "correctAnswer": "Egypt",
-        "category": "Geography"
+        "category": "History"
     },
     {
-        "question": "What is South Africa",
+        "question": "Which country has Cape Town and Kruger National Park?",
         "correctAnswer": "South Africa",
-        "category": "Geography"
+        "category": "Nature"
     },
     {
-        "question": "What is Saudi Arabia",
+        "question": "Which country is home to Mecca and Medina?",
         "correctAnswer": "Saudi Arabia",
-        "category": "Geography"
+        "category": "Religion"
     },
     {
-        "question": "What is Iran",
+        "question": "Which country has ancient ruins in Persepolis?",
         "correctAnswer": "Iran",
-        "category": "Geography"
+        "category": "History"
     },
     {
-        "question": "What is Turkey",
+        "question": "Which country connects Europe and Asia?",
         "correctAnswer": "Turkey",
         "category": "Geography"
     },
     {
-        "question": "What is Pakistan",
+        "question": "Which country has the city of Lahore and the Indus River?",
         "correctAnswer": "Pakistan",
         "category": "Geography"
     },
     {
-        "question": "What is Indonesia",
+        "question": "Where are the islands of Java and Bali located?",
         "correctAnswer": "Indonesia",
-        "category": "Geography"
+        "category": "Nature"
     },
     {
-        "question": "What is Thailand",
+        "question": "Which country celebrates Songkran as its New Year?",
         "correctAnswer": "Thailand",
-        "category": "Geography"
+        "category": "Culture"
     },
     {
-        "question": "What is Vietnam",
+        "question": "Which country has Ha Long Bay and Hanoi?",
         "correctAnswer": "Vietnam",
         "category": "Geography"
     }
