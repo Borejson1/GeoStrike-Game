@@ -3,30 +3,28 @@
 @inject IJSRuntime JS
 @inject ProtectedLocalStorage ProtectedLocalStore
 
-<div class="map-controller">
-    <div class="question">
-        <div class="question-text-container">
-            <div class="question-up-section">
-                <p class="question-category">@QuestionCategory</p>
-                <p class="question-text">@QuestionText</p>
-            </div>
-            <div class="question-down-section">
-                <p class="game-mode">Beginner mode</p>
-                <div class="question-buttons">
-                    <button class="restart-button"><div class="button-text">Restart</div></button>
-                    <button class="skip-button"><div class="button-text">Skip Question</div></button>
-                    <p class="to-skip">(5 times to left)</p>
-                </div>
+<div class="question">
+    <div class="question-text-container">
+        <div class="question-up-section">
+            <p class="question-category">@QuestionCategory</p>
+            <p class="question-text">@QuestionText</p>
+        </div>
+        <div class="question-down-section">
+            <p class="game-mode">Beginner mode</p>
+            <div class="question-buttons">
+                <button class="restart-button"><div class="button-text" @onclick=RestartScore>Restart</div></button>
+                <button class="skip-button"><div class="button-text" @onclick=SkipQuestion>Skip Question</div></button>
+                <p class="to-skip">(@SkipsRemaining skips remaining)</p>
             </div>
         </div>
-        <div class="player-score-container">
-            <p class="player-score">⚡  Your score: @PlayerGlobalScore</p>
-            <p class="player-best-score">⚡  Highest score: @PlayerBestScore</p>
-        </div>
     </div>
-    <div class="map">
-        <div id="chartdiv"></div>
+    <div class="player-score-container">
+        <p class="player-score"><i id="player-score-icon" class="fa-solid fa-medal"></i>Your score: @PlayerGlobalScore</p>
+        <p class="player-best-score"><i id="player-best-score-icon" class="fa-solid fa-ranking-star"></i>Highest score: @PlayerBestScore</p>
     </div>
+</div>
+<div class="map">
+    <div id="chartdiv"></div>
 </div>
 
 @code {
@@ -34,6 +32,7 @@
 
     public int PlayerGlobalScore = 0;
     public int PlayerBestScore = 0;
+    public int SkipsRemaining = 5;
     public string QuestionCategory = "";
     public string QuestionText = "";
 
@@ -55,7 +54,7 @@
     {
         dotNetHelper = DotNetObjectReference.Create(this);
 
-        string json = await System.IO.File.ReadAllTextAsync("wwwroot/data/questions.json");
+        string json = await System.IO.File.ReadAllTextAsync("wwwroot/data/beginner.json");
         QuestionsList = JsonConvert.DeserializeObject<List<Question>>(json);
         SetQuestionValues();
     }
@@ -111,6 +110,22 @@
         }
         SetQuestionValues();
         StateHasChanged();
+    }
+
+    public void RestartScore()
+    {
+        PlayerGlobalScore = 0;
+        SkipsRemaining = 5;
+        SetQuestionValues();
+    }
+
+    public void SkipQuestion()
+    {
+        if (SkipsRemaining != 0)
+        {
+            SkipsRemaining -= 1;
+            SetQuestionValues();
+        }
     }
 
     private async Task UpdateBestScoreCount()

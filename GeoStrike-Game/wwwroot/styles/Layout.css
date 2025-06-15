@@ -1,10 +1,12 @@
 ﻿
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 .navigation-bar {
     display: flex;
     top: 0;
     left: 0;
     right: 0;
-    height: 5vh;
+    height: 6vh;
     background-color: rgb(2, 2, 2);
     opacity: 0.95;
     align-items: center;
@@ -15,53 +17,53 @@
 }
 
 .navigation-element {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.75);
     text-decoration: none;
-    margin-right: 1.3rem;
-    font-size: 16px;
-    letter-spacing: 1px;
+    margin-right: 1.7rem;
+    font-size: 17px;
+    letter-spacing: 1.15px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    transition: all 0.3s ease-in-out;
 }
 
 .navigation-logo {
-    color: rgba(255, 255, 255, 0.6);
+    width: 85px;
+    padding-right: 45px;
+}
+
+.navigation-more {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 13px;
     text-decoration: none;
-    margin-right: 1.3rem;
-    font-size: 23px;
+    margin-left: auto;
 }
 
-.footer {
-    background-color: rgb(2, 2, 2);
-    opacity: 0.95;
-    color: rgba(255, 255, 255, 0.6);
-    padding: 1rem;
-    text-align: center;
-    flex-shrink: 0;
-    letter-spacing: 1px;
+.navigation-git, .navigation-contact {
+    color: #303030;
+    font-size: 26px;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-.footer-logo {
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 700;
+.navigation-git:hover, .navigation-contact:hover {
+    color: lightgray;
 }
 
-.footer a {
-    text-decoration: none; 
-    color: inherit;
+#beginner:hover {
+    color: rgba(255, 255, 255, 0.90);
+    text-shadow: 0 0 20px #00ff88;
 }
 
-ul {
-    padding: 0;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+#medium:hover {
+    color: rgba(255, 255, 255, 0.90);
+    text-shadow: 0 0 20px #ffa217;
 }
 
-.footer-elements li {
-    display: inline-block;
-    margin: 0 5px;
-}
-
-.footer-copyright {
-    font-weight: 300;
-    color: #999999;
+#advanced:hover {
+    color: rgba(255, 255, 255, 0.90);
+    text-shadow: 0 0 20px red;
 }
