@@ -1,152 +1,227 @@
 ﻿[
     {
-        "question": "Which country has the largest population in the world?",
-        "correctAnswer": "China",
-        "category": "General Knowledge"
-    },
-    {
-        "question": "Which is the largest country by land area?",
-        "correctAnswer": "Russia",
-        "category": "Geography"
-    },
-    {
-        "question": "Which country has 50 states and the Grand Canyon?",
-        "correctAnswer": "United States",
-        "category": "General Knowledge"
-    },
-    {
-        "question": "Where is the Amazon Rainforest located?",
+        "question": "Which country is the biggest in South America?",
         "correctAnswer": "Brazil",
-        "category": "Nature"
+        "category": "geography"
     },
     {
-        "question": "Which country is also a continent?",
-        "correctAnswer": "Australia",
-        "category": "Geography"
+        "question": "Which country borders both India and China?",
+        "correctAnswer": "Nepal",
+        "category": "geography"
     },
     {
-        "question": "Which country borders the USA to the north?",
-        "correctAnswer": "Canada",
-        "category": "Geography"
-    },
-    {
-        "question": "Where is the Taj Mahal located?",
-        "correctAnswer": "India",
-        "category": "Culture"
-    },
-    {
-        "question": "Which country is known for Oktoberfest and the Black Forest?",
-        "correctAnswer": "Germany",
-        "category": "Culture"
-    },
-    {
-        "question": "Which country is famous for the Eiffel Tower?",
-        "correctAnswer": "France",
-        "category": "Culture"
-    },
-    {
-        "question": "Where is the city of Rome located?",
-        "correctAnswer": "Italy",
-        "category": "History"
-    },
-    {
-        "question": "Which country is known for flamenco dancing and bullfighting?",
-        "correctAnswer": "Spain",
-        "category": "Culture"
-    },
-    {
-        "question": "Which country is directly south of the United States?",
-        "correctAnswer": "Mexico",
-        "category": "Geography"
-    },
-    {
-        "question": "Where is Patagonia partially located?",
-        "correctAnswer": "Argentina",
-        "category": "Nature"
-    },
-    {
-        "question": "Which country has Mount Fuji and bullet trains?",
-        "correctAnswer": "Japan",
-        "category": "General Knowledge"
-    },
-    {
-        "question": "Which country is famous for K-pop and kimchi?",
-        "correctAnswer": "South Korea",
-        "category": "Culture"
-    },
-    {
-        "question": "Which country includes England, Scotland, Wales, and Northern Ireland?",
-        "correctAnswer": "United Kingdom",
-        "category": "Geography"
-    },
-    {
-        "question": "Which European country has Kyiv as its capital?",
-        "correctAnswer": "Ukraine",
-        "category": "Geography"
-    },
-    {
-        "question": "Which country is famous for pierogi and Chopin?",
-        "correctAnswer": "Poland",
-        "category": "Culture"
-    },
-    {
-        "question": "Which country is known for fjords and the Northern Lights?",
+        "question": "Which country is known for fjords and the North Sea?",
         "correctAnswer": "Norway",
-        "category": "Nature"
+        "category": "geography"
     },
     {
-        "question": "Where is the region of Lapland located?",
-        "correctAnswer": "Sweden",
-        "category": "Geography"
+        "question": "Which country lies south of North Korea?",
+        "correctAnswer": "South Korea",
+        "category": "geography"
     },
     {
-        "question": "Which country has thousands of lakes and Saunas?",
-        "correctAnswer": "Finland",
-        "category": "Nature"
-    },
-    {
-        "question": "Where are the Pyramids of Giza located?",
-        "correctAnswer": "Egypt",
-        "category": "History"
-    },
-    {
-        "question": "Which country has Cape Town and Kruger National Park?",
-        "correctAnswer": "South Africa",
-        "category": "Nature"
-    },
-    {
-        "question": "Which country is home to Mecca and Medina?",
-        "correctAnswer": "Saudi Arabia",
-        "category": "Religion"
-    },
-    {
-        "question": "Which country has ancient ruins in Persepolis?",
-        "correctAnswer": "Iran",
-        "category": "History"
-    },
-    {
-        "question": "Which country connects Europe and Asia?",
-        "correctAnswer": "Turkey",
-        "category": "Geography"
-    },
-    {
-        "question": "Which country has the city of Lahore and the Indus River?",
-        "correctAnswer": "Pakistan",
-        "category": "Geography"
-    },
-    {
-        "question": "Where are the islands of Java and Bali located?",
+        "question": "Which country has Jakarta as its capital?",
         "correctAnswer": "Indonesia",
-        "category": "Nature"
+        "category": "geography"
     },
     {
-        "question": "Which country celebrates Songkran as its New Year?",
-        "correctAnswer": "Thailand",
-        "category": "Culture"
+        "question": "Which country lies west of Russia and east of Germany?",
+        "correctAnswer": "Poland",
+        "category": "geography"
     },
     {
-        "question": "Which country has Ha Long Bay and Hanoi?",
-        "correctAnswer": "Vietnam",
-        "category": "Geography"
-    }
+        "question": "Which country owns the island of Greenland?",
+        "correctAnswer": "Denmark",
+        "category": "geography"
+    },
+    {
+        "question": "Which country lies on both Asia and Europe?",
+        "correctAnswer": "Turkey",
+        "category": "geography"
+    },
+    {
+        "question": "Which country lies at the southern tip of Africa?",
+        "correctAnswer": "South Africa",
+        "category": "geography"
+    },
+    {
+        "question": "Which country has the largest population in Africa?",
+        "correctAnswer": "Nigeria",
+        "category": "geography"
+    },
+    {
+        "question": "Which country controls the island of Corsica?",
+        "correctAnswer": "France",
+        "category": "geography"
+    },
+    {
+        "question": "Which country is famous for the Great Pyramids?",
+        "correctAnswer": "Egypt",
+        "category": "history"
+    },
+    {
+        "question": "Which country ruled India before independence?",
+        "correctAnswer": "United Kingdom",
+        "category": "history"
+    },
+    {
+        "question": "Which country invaded Poland in 1939?",
+        "correctAnswer": "Germany",
+        "category": "history"
+    },
+    {
+        "question": "Which country experienced the Meiji Restoration?",
+        "correctAnswer": "Japan",
+        "category": "history"
+    },
+    {
+        "question": "Which country had the Bolshevik Revolution?",
+        "correctAnswer": "Russia",
+        "category": "history"
+    },
+    {
+        "question": "Which country was ruled by the Khmer Rouge?",
+        "correctAnswer": "Cambodia",
+        "category": "history"
+    },
+    {
+        "question": "Which country did the Roman Empire originate from?",
+        "correctAnswer": "Italy",
+        "category": "history"
+    },
+    {
+        "question": "Which country colonized much of South America?",
+        "correctAnswer": "Spain",
+        "category": "history"
+    },
+    {
+        "question": "Which country was split during the Cold War?",
+        "correctAnswer": "Germany",
+        "category": "history"
+    },
+    {
+        "question": "Which country led the Allies in World War II?",
+        "correctAnswer": "United States",
+        "category": "history"
+    },
+    {
+        "question": "Which country is famous for flamenco dancing?",
+        "correctAnswer": "Spain",
+        "category": "culture"
+    },
+    {
+        "question": "Which country is known for traditional tea ceremonies?",
+        "correctAnswer": "Japan",
+        "category": "culture"
+    },
+    {
+        "question": "Which country celebrates Bastille Day?",
+        "correctAnswer": "France",
+        "category": "culture"
+    },
+    {
+        "question": "Which country is home to Bollywood movies?",
+        "correctAnswer": "India",
+        "category": "culture"
+    },
+    {
+        "question": "Which country is famous for Carnival in Rio?",
+        "correctAnswer": "Brazil",
+        "category": "culture"
+    },
+    {
+        "question": "Which country is famous for maple syrup and hockey?",
+        "correctAnswer": "Canada",
+        "category": "culture"
+    },
+    {
+        "question": "Which country is known for reggae music?",
+        "correctAnswer": "Jamaica",
+        "category": "culture"
+    },
+    {
+        "question": "Which country has Oktoberfest beer festivals?",
+        "correctAnswer": "Germany",
+        "category": "culture"
+    },
+    {
+        "question": "Which country celebrates the Day of the Dead?",
+        "correctAnswer": "Mexico",
+        "category": "culture"
+    },
+    {
+        "question": "Which country has ancient temples of Angkor Wat?",
+        "correctAnswer": "Cambodia",
+        "category": "culture"
+    },
+    {
+        "question": "Which country is home to the Amazon Rainforest?",
+        "correctAnswer": "Brazil",
+        "category": "nature"
+    },
+    {
+        "question": "Which country is home to the Serengeti plains?",
+        "correctAnswer": "Tanzania",
+        "category": "nature"
+    },
+    {
+        "question": "Which country is known for volcanoes and geysers?",
+        "correctAnswer": "Iceland",
+        "category": "nature"
+    },
+    {
+        "question": "Which country is home to the Galapagos Islands?",
+        "correctAnswer": "Ecuador",
+        "category": "nature"
+    },
+    {
+        "question": "Which country has both deserts and snowy mountains?",
+        "correctAnswer": "Chile",
+        "category": "nature"
+    },
+    {
+        "question": "Which country has Lake Baikal, the deepest lake?",
+        "correctAnswer": "Russia",
+        "category": "nature"
+    },
+    {
+        "question": "Which country has the highest population?",
+        "correctAnswer": "India",
+        "category": "knowledge"
+    },
+    {
+        "question": "Which country has the most neighboring countries?",
+        "correctAnswer": "Russia",
+        "category": "knowledge"
+    },
+    {
+        "question": "Which country has the most time zones?",
+        "correctAnswer": "France",
+        "category": "knowledge"
+    },
+    {
+        "question": "Which country has the most official languages?",
+        "correctAnswer": "South Africa",
+        "category": "knowledge"
+    },
+    {
+        "question": "Which country drinks the most coffee per person?",
+        "correctAnswer": "Finland",
+        "category": "knowledge"
+    },
+    {
+        "question": "Which country invented paper?",
+        "correctAnswer": "China",
+        "category": "knowledge"
+    },
+    {
+        "question": "Which country uses the yen as currency?",
+        "correctAnswer": "Japan",
+        "category": "knowledge"
+    },
+    {
+        "question": "Which country has the most internet users?",
+        "correctAnswer": "China",
+        "category": "knowledge"
+    },
 ]
