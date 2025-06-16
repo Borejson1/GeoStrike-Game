@@ -37,6 +37,7 @@
     public string QuestionText = "";
 
     private DotNetObjectReference<MapController>? dotNetHelper;
+    private List<string> usedQuestions = new List<string>();
 
     private bool mapInitialized = false;
     private bool bestScoreInitialized = false;
@@ -81,12 +82,34 @@
     {
         if (QuestionsList.Count == 0) return;
 
-        var random = new Random();
-        int index = random.Next(QuestionsList.Count);
+        if (usedQuestions.Count >= QuestionsList.Count)
+        {
+            usedQuestions.Clear();
+        }
 
-        QuestionText = QuestionsList[index].question;
-        correctAnswer = QuestionsList[index].correctAnswer;
-        QuestionCategory = QuestionsList[index].category;
+        var availableQuestions = new List<Question>();
+        foreach (var question in QuestionsList)
+        {
+            if (!usedQuestions.Contains(question.question))
+            {
+                availableQuestions.Add(question);
+            }
+        }
+
+        if (availableQuestions.Count == 0)
+        {
+            usedQuestions.Clear();
+            availableQuestions = new List<Question>(QuestionsList);
+        }
+
+        var random = new Random();
+        var selectedQuestion = availableQuestions[random.Next(availableQuestions.Count)];
+
+        usedQuestions.Add(selectedQuestion.question);
+        QuestionText = selectedQuestion.question;
+        correctAnswer = selectedQuestion.correctAnswer;
+        QuestionCategory = selectedQuestion.category;
+
         StateHasChanged();
     }
 
@@ -116,6 +139,7 @@
     {
         PlayerGlobalScore = 0;
         SkipsRemaining = 5;
+        usedQuestions.Clear();
         SetQuestionValues();
     }
 
