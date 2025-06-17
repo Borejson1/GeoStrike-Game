@@ -191,7 +191,7 @@
     },
     {
         "question": "Which country has the most neighboring countries?",
-        "correctAnswer": "Russia",
+        "correctAnswer": "China",
         "category": "knowledge"
     },
     {
@@ -223,5 +223,25 @@
         "question": "Which country has the most internet users?",
         "correctAnswer": "China",
         "category": "knowledge"
+    },
+    {
+        "question": "Which country is shaped like a boot?",
+        "correctAnswer": "Italy",
+        "category": "geography"
+    },
+    {
+        "question": "Which country has the capital city of Canberra?",
+        "correctAnswer": "Australia",
+        "category": "geography"
+    },
+    {
+        "question": "Which country is known for the Eiffel Tower?",
+        "correctAnswer": "France",
+        "category": "culture"
+    },
+    {
+        "question": "Which country is home to the kangaroo?",
+        "correctAnswer": "Australia",
+        "category": "nature"
     },
 ]

@@ -2,6 +2,7 @@
 @implements IAsyncDisposable
 @inject IJSRuntime JS
 @inject ProtectedLocalStorage ProtectedLocalStore
+@inject ModeService ModeService
 
 <div class="question">
     <div class="question-text-container">
@@ -10,10 +11,10 @@
             <p class="question-text">@QuestionText</p>
         </div>
         <div class="question-down-section">
-            <p class="game-mode">Beginner mode</p>
+            <p class="mode-class" id="@($"mode-{ModeService.CurrentMode}")">@ModeService.GameModeText</p>
             <div class="question-buttons">
-                <button class="restart-button"><div class="button-text" @onclick=RestartScore>Restart</div></button>
-                <button class="skip-button"><div class="button-text" @onclick=SkipQuestion>Skip Question</div></button>
+                <button class="restart-button" id=@ModeService.RestartButtonId ><div class="button-text" @onclick=RestartScore>Restart</div></button>
+                <button class="skip-button" id=@ModeService.SkipButtonId ><div class="button-text" @onclick=SkipQuestion>Skip Question</div></button>
                 <p class="to-skip">(@SkipsRemaining skips remaining)</p>
             </div>
         </div>
@@ -54,8 +55,7 @@
     protected override async Task OnInitializedAsync()
     {
         dotNetHelper = DotNetObjectReference.Create(this);
-
-        string json = await System.IO.File.ReadAllTextAsync("wwwroot/data/beginner.json");
+        string json = await System.IO.File.ReadAllTextAsync(ModeService.JsonDataPath);
         QuestionsList = JsonConvert.DeserializeObject<List<Question>>(json);
         SetQuestionValues();
     }
@@ -154,12 +154,12 @@
 
     private async Task UpdateBestScoreCount()
     {
-        await ProtectedLocalStore.SetAsync("playerBestScore", PlayerBestScore);
+        await ProtectedLocalStore.SetAsync(ModeService.ScoreLoading, PlayerBestScore);
     }
 
     private async Task LoadBestScoreCount()
     {
-        var result = await ProtectedLocalStore.GetAsync<int>("playerBestScore");
+        var result = await ProtectedLocalStore.GetAsync<int>(ModeService.ScoreLoading);
         if (result.Success)
         {
             PlayerBestScore = result.Value;

@@ -1,17 +1,17 @@
 ﻿[
     {
-        "question": "Which country has Tbilisi as its capital city?",
+        "question": "Which country has Tbilisi as its capital and borders the Black Sea?",
         "correctAnswer": "Georgia",
         "category": "geography"
     },
     {
-        "question": "Which country is known for the ancient city of Petra?",
+        "question": "Which Middle Eastern country is home to Petra?",
         "correctAnswer": "Jordan",
         "category": "history"
     },
     {
-        "question": "Which country produces most of the world's guaraná?",
-        "correctAnswer": "Paraguay",
+        "question": "Which South American country leads in guaraná seed production?",
+        "correctAnswer": "Brazil",
         "category": "knowledge"
     },
     {
@@ -20,208 +20,183 @@
         "category": "geography"
     },
     {
-        "question": "In which country would you find the sacred site of Lalibela?",
+        "question": "Where are the rock-hewn churches of Lalibela located?",
         "correctAnswer": "Ethiopia",
         "category": "culture"
     },
     {
-        "question": "Which country is home to Lake Titicaca, the highest large lake?",
-        "correctAnswer": "Bolivia",
-        "category": "nature"
-    },
-    {
-        "question": "Which country has Sucre as its constitutional capital?",
-        "correctAnswer": "Bolivia",
-        "category": "geography"
-    },
-    {
-        "question": "Which country is known for the traditional dance called Dabke?",
+        "question": "Which country is the origin of the Dabke dance?",
         "correctAnswer": "Lebanon",
         "category": "culture"
     },
     {
-        "question": "Which country has the world’s largest oil reserves in South America?",
+        "question": "Which OPEC country has the most proven oil reserves?",
         "correctAnswer": "Venezuela",
         "category": "knowledge"
     },
     {
-        "question": "Which country fought the Chaco War against Paraguay?",
-        "correctAnswer": "Bolivia",
-        "category": "history"
-    },
-    {
-        "question": "Which country has the city of Baku as its capital?",
-        "correctAnswer": "Azerbaijan",
-        "category": "geography"
-    },
-    {
-        "question": "Where would you find the cultural festival of Inti Raymi?",
-        "correctAnswer": "Peru",
-        "category": "culture"
-    },
-    {
-        "question": "Which country’s flag features a red maple leaf?",
-        "correctAnswer": "Canada",
-        "category": "knowledge"
-    },
-    {
-        "question": "Which country lies between Armenia and Turkey?",
+        "question": "Which country borders Russia and Turkey in the Caucasus?",
         "correctAnswer": "Georgia",
         "category": "geography"
     },
     {
-        "question": "Which country is known for the historic site of Machu Picchu?",
-        "correctAnswer": "Peru",
-        "category": "history"
-    },
-    {
-        "question": "Which country has deserts called the Kalahari and Namib?",
+        "question": "Which African country includes the Namib and Kalahari Deserts?",
         "correctAnswer": "Namibia",
         "category": "nature"
     },
     {
-        "question": "Which country’s cuisine includes dishes like ceviche and lomo saltado?",
-        "correctAnswer": "Peru",
-        "category": "culture"
-    },
-    {
-        "question": "Which country is the largest producer of emeralds worldwide?",
+        "question": "Which country produces most of the world’s emeralds?",
         "correctAnswer": "Colombia",
         "category": "knowledge"
     },
     {
-        "question": "Which country shares borders with both Russia and China?",
+        "question": "Which landlocked Asian country borders Russia and China?",
         "correctAnswer": "Mongolia",
         "category": "geography"
     },
     {
-        "question": "Which country has ancient ruins of Persepolis?",
-        "correctAnswer": "Iran",
-        "category": "history"
-    },
-    {
-        "question": "Which country hosts the world’s largest salt flat, Salar de Uyuni?",
+        "question": "Which country has the world's largest salt flat?",
         "correctAnswer": "Bolivia",
         "category": "nature"
     },
     {
-        "question": "Which country’s traditional music includes the genre called Tango?",
-        "correctAnswer": "Argentina",
-        "category": "culture"
-    },
-    {
-        "question": "Which country leads in world copper production?",
-        "correctAnswer": "Chile",
-        "category": "knowledge"
-    },
-    {
-        "question": "Which country is home to the ancient city of Carthage?",
-        "correctAnswer": "Tunisia",
-        "category": "history"
-    },
-    {
-        "question": "Which country borders the Mediterranean and has Beirut as capital?",
-        "correctAnswer": "Lebanon",
-        "category": "geography"
-    },
-    {
-        "question": "Which country produces the majority of the world's saffron?",
-        "correctAnswer": "Iran",
-        "category": "knowledge"
-    },
-    {
-        "question": "Which country’s capital is Ulaanbaatar?",
-        "correctAnswer": "Mongolia",
-        "category": "geography"
-    },
-    {
-        "question": "Which country was home to the ancient city of Babylon?",
-        "correctAnswer": "Iraq",
-        "category": "history"
-    },
-    {
-        "question": "Which country has the Okavango Delta, a major wetland system?",
-        "correctAnswer": "Botswana",
-        "category": "nature"
-    },
-    {
-        "question": "Which country is famous for its unique music style called Fado?",
+        "question": "Which country’s music features Fado and Pimba?",
         "correctAnswer": "Portugal",
         "category": "culture"
     },
     {
-        "question": "Which country is the largest exporter of coffee in the world?",
-        "correctAnswer": "Brazil",
-        "category": "knowledge"
-    },
-    {
-        "question": "Which country borders both Hungary and Slovakia?",
-        "correctAnswer": "Ukraine",
-        "category": "geography"
-    },
-    {
-        "question": "Which country’s history includes the rule of the Ottoman Empire?",
-        "correctAnswer": "Turkey",
-        "category": "history"
-    },
-    {
-        "question": "Which country is known for the endangered species called Axolotl?",
-        "correctAnswer": "Mexico",
-        "category": "nature"
-    },
-    {
-        "question": "Which country ranks among the top producers of lithium worldwide?",
+        "question": "Which country is the top copper producer globally?",
         "correctAnswer": "Chile",
         "category": "knowledge"
     },
     {
-        "question": "Which country lies between Niger and Cameroon?",
-        "correctAnswer": "Nigeria",
-        "category": "geography"
-    },
-    {
-        "question": "Which country was once the center of the Khmer Empire?",
-        "correctAnswer": "Cambodia",
+        "question": "Where are the ruins of ancient Carthage?",
+        "correctAnswer": "Tunisia",
         "category": "history"
     },
     {
-        "question": "Which country contains the Danakil Depression, one of the hottest places?",
-        "correctAnswer": "Ethiopia",
-        "category": "nature"
-    },
-    {
-        "question": "Which country is famous for traditional music called Mariachi?",
-        "correctAnswer": "Mexico",
-        "category": "culture"
-    },
-    {
-        "question": "Which country is a leading producer of diamonds worldwide?",
-        "correctAnswer": "Botswana",
+        "question": "Which country produces most of the world's saffron?",
+        "correctAnswer": "Iran",
         "category": "knowledge"
     },
     {
-        "question": "Which country borders China, Nepal, and Bhutan?",
-        "correctAnswer": "India",
-        "category": "geography"
-    },
-    {
-        "question": "Which country is known for the historical site of Angkor Wat?",
-        "correctAnswer": "Cambodia",
-        "category": "history"
-    },
-    {
-        "question": "Which country has the Serengeti National Park, famous for wildlife?",
-        "correctAnswer": "Tanzania",
+        "question": "Which country contains the Okavango Delta?",
+        "correctAnswer": "Botswana",
         "category": "nature"
     },
     {
-        "question": "Which country’s culture is famous for the traditional dance called Sabar?",
+        "question": "Which West African country is known for the Sabar dance?",
         "correctAnswer": "Senegal",
         "category": "culture"
     },
     {
-        "question": "Which country has the world’s largest reserves of bauxite?",
+        "question": "Which country has 25% of global bauxite reserves?",
         "correctAnswer": "Guinea",
         "category": "knowledge"
     },
+    {
+        "question": "Which country contains the Danakil Depression?",
+        "correctAnswer": "Ethiopia",
+        "category": "nature"
+    },
+    {
+        "question": "Which country is the only wild home of the axolotl?",
+        "correctAnswer": "Mexico",
+        "category": "nature"
+    },
+    {
+        "question": "Which country shares Iguazu Falls with Brazil?",
+        "correctAnswer": "Argentina",
+        "category": "geography"
+    },
+    {
+        "question": "Where is the Atacama Desert located?",
+        "correctAnswer": "Chile",
+        "category": "knowledge"
+    },
+    {
+        "question": "Which West African country borders Benin and Cameroon?",
+        "correctAnswer": "Nigeria",
+        "category": "geography"
+    },
+    {
+        "question": "Which country has the Sahelian city of Timbuktu?",
+        "correctAnswer": "Mali",
+        "category": "history"
+    },
+    {
+        "question": "Which Central Asian country is home to Lake Issyk-Kul?",
+        "correctAnswer": "Kyrgyzstan",
+        "category": "nature"
+    },
+    {
+        "question": "Which country’s flag features a cedar tree?",
+        "correctAnswer": "Lebanon",
+        "category": "culture"
+    },
+    {
+        "question": "Which Central American country has no standing army since 1949?",
+        "correctAnswer": "Costa Rica",
+        "category": "knowledge"
+    },
+    {
+        "question": "Which African country has the historical city of Timbuktu?",
+        "correctAnswer": "Mali",
+        "category": "history"
+    },
+    {
+        "question": "Which Southeast Asian country has the island of Mindanao?",
+        "correctAnswer": "Philippines",
+        "category": "geography"
+    },
+    {
+        "question": "Which European country is known for the Sevdalinka music genre?",
+        "correctAnswer": "Bosnia and Herzegovina",
+        "category": "culture"
+    },
+    {
+        "question": "Which South Asian country is the top producer of tea globally?",
+        "correctAnswer": "India",
+        "category": "knowledge"
+    },
+    {
+        "question": "Which country is home to the ancient city of Palmyra?",
+        "correctAnswer": "Syria",
+        "category": "history"
+    },
+    {
+        "question": "Which country hosts the Serengeti ecosystem?",
+        "correctAnswer": "Tanzania",
+        "category": "nature"
+    },
+    {
+        "question": "Which Baltic country has the Hill of Crosses?",
+        "correctAnswer": "Lithuania",
+        "category": "culture"
+    },
+    {
+        "question": "Which country is the world’s top exporter of uranium?",
+        "correctAnswer": "Kazakhstan",
+        "category": "knowledge"
+    },
+    {
+        "question": "Which country contains the archaeological site of Caral?",
+        "correctAnswer": "Peru",
+        "category": "history"
+    },
+    {
+        "question": "Which Asian country is home to the endangered saola?",
+        "correctAnswer": "Laos",
+        "category": "nature"
+    },
+    {
+        "question": "Which country has the Zambezi River and Victoria Falls?",
+        "correctAnswer": "Zambia",
+        "category": "geography"
+    },
+    {
+        "question": "Which country celebrates Nowruz as a major national holiday?",
+        "correctAnswer": "Turkmenistan",
+        "category": "culture"
+    }
 ]

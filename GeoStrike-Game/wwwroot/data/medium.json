@@ -10,27 +10,17 @@
         "category": "geography"
     },
     {
-        "question": "Which country is famous for the ancient city of Petra?",
-        "correctAnswer": "Jordan",
-        "category": "history"
-    },
-    {
         "question": "Which country is home to the Great Barrier Reef?",
         "correctAnswer": "Australia",
         "category": "nature"
     },
     {
-        "question": "Which country is known for the Carnaval festival in South America?",
+        "question": "Which country is known for the Carnival festival in Rio de Janeiro?",
         "correctAnswer": "Brazil",
         "category": "culture"
     },
     {
-        "question": "Which European country was never invaded during World War II?",
-        "correctAnswer": "Sweden",
-        "category": "history"
-    },
-    {
-        "question": "Which country hosts the cultural event La Tomatina every year?",
+        "question": "Which country hosts the La Tomatina festival?",
         "correctAnswer": "Spain",
         "category": "culture"
     },
@@ -40,62 +30,52 @@
         "category": "knowledge"
     },
     {
-        "question": "Which country has the world's largest desert outside Antarctica?",
+        "question": "Which country contains most of the Sahara Desert?",
         "correctAnswer": "Algeria",
         "category": "geography"
     },
     {
-        "question": "Which country has the most official languages recognized?",
+        "question": "Which country has the most official languages?",
         "correctAnswer": "Bolivia",
         "category": "knowledge"
     },
     {
-        "question": "Which country is famous for its fjords along the western coastline?",
+        "question": "Which country is famous for its fjords?",
         "correctAnswer": "Norway",
         "category": "nature"
     },
     {
-        "question": "Which country was the birthplace of the Renaissance movement?",
+        "question": "Which country was the birthplace of the Renaissance?",
         "correctAnswer": "Italy",
         "category": "history"
     },
     {
-        "question": "Which country was the main battleground during the Korean War?",
-        "correctAnswer": "South Korea",
-        "category": "history"
-    },
-    {
-        "question": "Which country is home to the Amazon River’s largest basin?",
+        "question": "Which country contains the largest part of the Amazon Rainforest?",
         "correctAnswer": "Brazil",
         "category": "nature"
     },
     {
-        "question": "Which country has Tokyo as the largest metropolitan area globally?",
+        "question": "Which country's capital is Tokyo, the largest metropolitan area?",
         "correctAnswer": "Japan",
         "category": "geography"
     },
     {
-        "question": "Which country is known for inventing pizza and pasta dishes?",
+        "question": "Which country is known for inventing pizza?",
         "correctAnswer": "Italy",
         "category": "culture"
     },
     {
-        "question": "Which country has the most volcanoes in the world?",
+        "question": "Which country has the most active volcanoes?",
         "correctAnswer": "Indonesia",
         "category": "nature"
     },
     {
-        "question": "Which country declared independence from the Soviet Union in 1991?",
-        "correctAnswer": "Ukraine",
-        "category": "history"
-    },
-    {
-        "question": "Which country is the largest producer of coffee worldwide?",
+        "question": "Which country is the largest producer of coffee?",
         "correctAnswer": "Brazil",
         "category": "knowledge"
     },
     {
-        "question": "Which country has the highest number of UNESCO World Heritage Sites?",
+        "question": "Which country has the most UNESCO World Heritage Sites?",
         "correctAnswer": "Italy",
         "category": "culture"
     },
@@ -105,123 +85,148 @@
         "category": "culture"
     },
     {
-        "question": "Which country’s capital city was formerly called Leningrad?",
+        "question": "Which country's second city was once called Leningrad?",
         "correctAnswer": "Russia",
         "category": "history"
     },
     {
-        "question": "Which country has the deepest lake in the world, Lake Baikal?",
+        "question": "Which country has Lake Baikal, the deepest lake?",
         "correctAnswer": "Russia",
         "category": "nature"
     },
     {
-        "question": "Which country has the highest mountain outside Asia, Aconcagua?",
+        "question": "Which country has Aconcagua, the highest peak outside Asia?",
         "correctAnswer": "Argentina",
         "category": "geography"
     },
     {
-        "question": "Which country is the main producer of maple syrup?",
+        "question": "Which country produces the most maple syrup?",
         "correctAnswer": "Canada",
         "category": "knowledge"
     },
     {
-        "question": "Which country was the location of the ancient city of Troy?",
+        "question": "Which country was the location of ancient Troy?",
         "correctAnswer": "Turkey",
         "category": "history"
     },
     {
-        "question": "Which country has the largest number of active volcanoes in Europe?",
-        "correctAnswer": "Italy",
-        "category": "nature"
-    },
-    {
-        "question": "Which country is home to the cultural festival Diwali?",
+        "question": "Which country celebrates Diwali as its main festival?",
         "correctAnswer": "India",
         "category": "culture"
     },
     {
-        "question": "Which country has the oldest parliament in the world still in use?",
+        "question": "Which country has the oldest parliament?",
         "correctAnswer": "Iceland",
         "category": "history"
     },
     {
-        "question": "Which country is known for its large steel industry and automobiles?",
-        "correctAnswer": "Germany",
-        "category": "knowledge"
-    },
-    {
-        "question": "Which country is famous for the art style called Impressionism?",
+        "question": "Which country is famous for Impressionist art?",
         "correctAnswer": "France",
         "category": "culture"
     },
     {
-        "question": "Which country was the site of the historic Battle of Hastings?",
-        "correctAnswer": "United Kingdom",
-        "category": "history"
-    },
-    {
-        "question": "Which country is known as the birthplace of democracy?",
+        "question": "Which country is considered the birthplace of democracy?",
         "correctAnswer": "Greece",
         "category": "history"
     },
     {
-        "question": "Which country has the largest population of wild tigers?",
+        "question": "Which country has the most wild tigers?",
         "correctAnswer": "India",
         "category": "nature"
     },
     {
-        "question": "Which country’s national dish is called Poutine?",
+        "question": "Which country's national dish is poutine?",
         "correctAnswer": "Canada",
         "category": "culture"
     },
     {
-        "question": "Which country has the world’s largest salt flat, Salar de Uyuni?",
+        "question": "Which country has Salar de Uyuni salt flats?",
         "correctAnswer": "Bolivia",
         "category": "geography"
     },
     {
-        "question": "Which country was the first to allow women to vote in national elections?",
+        "question": "Which country first gave women voting rights?",
         "correctAnswer": "New Zealand",
         "category": "history"
     },
     {
-        "question": "Which country is the biggest exporter of olive oil?",
+        "question": "Which country is the largest exporter of olive oil?",
         "correctAnswer": "Spain",
         "category": "knowledge"
     },
     {
-        "question": "Which country has the largest coral reef system in the world?",
-        "correctAnswer": "Australia",
-        "category": "nature"
-    },
-    {
-        "question": "Which country is the birthplace of the famous composer Chopin?",
-        "correctAnswer": "Poland",
-        "category": "culture"
-    },
-    {
-        "question": "Which country has the capital city called Addis Ababa?",
-        "correctAnswer": "Ethiopia",
-        "category": "geography"
-    },
-    {
-        "question": "Which country has the largest gold reserves in the world?",
-        "correctAnswer": "United States",
-        "category": "knowledge"
-    },
-    {
-        "question": "Which country is famous for its vast steppe landscape, the Pampas?",
+        "question": "Which country is home to the Pampas grasslands?",
         "correctAnswer": "Argentina",
         "category": "nature"
     },
     {
-        "question": "Which country was the home of the ancient civilization of Mesopotamia?",
+        "question": "Which country was home to ancient Mesopotamia?",
         "correctAnswer": "Iraq",
         "category": "history"
     },
     {
-        "question": "Which country is known for its traditional festival called Carnival in Venice?",
-        "correctAnswer": "Italy",
+        "question": "Which country has the most biodiversity per area?",
+        "correctAnswer": "Costa Rica",
+        "category": "nature"
+    },
+    {
+        "question": "Which country has the most islands?",
+        "correctAnswer": "Sweden",
+        "category": "geography"
+    },
+    {
+        "question": "Which country consumes the most chocolate per capita?",
+        "correctAnswer": "Switzerland",
+        "category": "knowledge"
+    },
+    {
+        "question": "Which country has Reykjavík as its capital city?",
+        "correctAnswer": "Iceland",
+        "category": "geography"
+    },
+    {
+        "question": "Which country is known for the Moai statues on Easter Island?",
+        "correctAnswer": "Chile",
         "category": "culture"
+    },
+    {
+        "question": "Which country is home to the Gobi Desert?",
+        "correctAnswer": "Mongolia",
+        "category": "nature"
+    },
+    {
+        "question": "Which country hosted the first modern Olympic Games?",
+        "correctAnswer": "Greece",
+        "category": "history"
+    },
+    {
+        "question": "Which country has the most lakes in the world?",
+        "correctAnswer": "Canada",
+        "category": "nature"
+    },
+    {
+        "question": "Which country is the largest by land area in Africa?",
+        "correctAnswer": "Algeria",
+        "category": "geography"
+    },
+    {
+        "question": "Which country is the main origin of the tango dance?",
+        "correctAnswer": "Argentina",
+        "category": "culture"
+    },
+    {
+        "question": "Which country is famous for its ancient pyramids in Giza?",
+        "correctAnswer": "Egypt",
+        "category": "history"
+    },
+    {
+        "question": "Which country has the longest river in Europe?",
+        "correctAnswer": "Russia",
+        "category": "geography"
+    },
+    {
+        "question": "Which country is the world’s top rice producer?",
+        "correctAnswer": "China",
+        "category": "knowledge"
     },
 ]

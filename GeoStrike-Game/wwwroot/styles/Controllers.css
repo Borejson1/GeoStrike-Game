@@ -83,6 +83,13 @@
     padding-left: 1.5vh;
 }
 
+.mode-class {
+    font-size: 1.13em;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
 .to-skip {
     font-size: 0.7vmax;
     margin-bottom: 0vh;
@@ -93,19 +100,10 @@
     height: 100%;
 }
 
-.game-mode {
-    color: #14872d;
-    font-size: 1.13em;
-    font-style: italic;
-    font-weight: 500;
-    letter-spacing: 0.2px;
-}
-
 .restart-button, .skip-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #14872d;
     border-radius: 5px;
     border: none;
     cursor: pointer;
@@ -116,7 +114,6 @@
 }
 
 .restart-button:hover, .skip-button:hover {
-    background-color: #1fa94a;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
     color: #ffffff;
     filter: brightness(1.04);

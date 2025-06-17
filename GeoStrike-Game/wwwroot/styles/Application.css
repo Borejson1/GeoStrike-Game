@@ -1,55 +1,84 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
 * {
     font-family: "Fredoka", sans-serif;
     font-weight: 500;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html, body {
     height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
-.main-content-container {
+.app-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-beginner, .main-medium, .main-advanced {
     flex: 1;
-    overflow: auto;
-    padding: 1rem;
-    box-sizing: border-box;
-    background: radial-gradient( circle at bottom left, rgba(144, 238, 144, 0.5) 0%, rgba(255, 250, 250, 0.8) 24%, snow 100% );
-    color: black;
-    overflow: auto;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding: 1rem 10vw;
     min-height: 94vh;
     padding-top: 8vh;
     padding-bottom: 8vh;
     width: 100%;
+    position: relative;
 }
 
-.main-content-container * {
-    position: relative; 
-    z-index: 0;
-}
-
-.beginner-container {
+.beginner-container, .medium-container, .advanced-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     height: 78vh;
 }
 
-.medium-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 78vh;
+.main-beginner {
+    background: radial-gradient(circle at bottom left, rgba(144, 238, 144, 0.67) 0%, rgba(255, 250, 250, 0.8) 24%, snow 100%);
 }
 
-.advanced-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 78vh;
+.main-medium {
+    background: radial-gradient(circle at bottom left, rgba(243, 135, 0, 0.35) 0%, rgba(255, 250, 250, 0.8) 24%, snow 100%);
 }
+
+.main-advanced {
+    background: radial-gradient(circle at bottom left, rgba(108, 46, 155, 0.38) 0%, rgba(255, 250, 250, 0.8) 24%, snow 100%);
+}
+
+#mode-beginner {
+    color: #14872d;
+}
+
+#mode-medium {
+    color: rgb(243, 135, 1);
+}
+
+#mode-advanced {
+    color: rgb(111, 42, 198);
+}
+
+#restart-beginner, #skip-beginner {
+    background-color: #14872d;
+}
+
+#restart-medium, #skip-medium {
+    background-color: rgb(243, 135, 1);
+}
+
+#restart-advanced, #skip-advanced {
+    background-color: rgb(111, 42, 198);
+}
+
+#restart-beginner:hover, #skip-beginner:hover {
+    background-color: #1fa94a;
+}
+
+#restart-medium:hover, #skip-medium:hover {
+    background-color: rgb(255, 156, 33);
+}
+
+#restart-advanced:hover, #skip-advanced:hover {
+    background-color: rgb(140, 62, 239);
+}
+

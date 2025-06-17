@@ -1,8 +1,17 @@
 using GeoStrike_Game.Components;
+using Microsoft.AspNetCore.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorComponents().AddInteractiveServerComponents();
+
+builder.Services.AddScoped<ModeService>();
+builder.Services.AddHttpClient();  
+
+builder.Services.AddScoped(sp => {
+    var navigationManager = sp.GetRequiredService<NavigationManager>();
+    return new HttpClient { BaseAddress = new Uri(navigationManager.BaseUri) };
+});
 
 var app = builder.Build();
 
@@ -13,7 +22,6 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseStaticFiles();
 app.UseAntiforgery();
 
