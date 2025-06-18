@@ -1,6 +1,6 @@
 ﻿
 .question {
-    width: 30%;
+    width: 40%;
     height: 100%;
     justify-content: center; 
 }
@@ -10,12 +10,12 @@
     margin-bottom: 1.4vh;
 }
 
-.question-up-section{
-    height: 80%;
+.question-up-section {
+    height: 60%;
 }
 
-.question-down-section{
-    height: 20%;
+.question-down-section {
+    height: 40%;
 }
 
 .question-category {
@@ -27,14 +27,16 @@
 }
 
 .question-text{
-    font-size: 2vmax;
+    font-size: 1.9vmax;
 }
 
 .question-buttons {
     display: flex;
+    flex-wrap: wrap; 
     align-items: center;
-    align-items: flex-end;
     gap: 1vh;
+    width: 100%; 
+    justify-content: flex-start; 
 }
 
 .player-score-container, .question-text-container {
@@ -45,7 +47,7 @@
     border: 1px solid rgba(209, 213, 219, 0.3);
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     max-width: 100%;
-    padding: 5vh;
+    padding: 1vmin;
     word-wrap: break-word;
 }
 
@@ -78,7 +80,7 @@
 }
 
 .map {
-    width: 70%;
+    width: 60%;
     height: 100%;
     padding-left: 1.5vh;
 }
@@ -91,8 +93,12 @@
 }
 
 .to-skip {
-    font-size: 0.7vmax;
-    margin-bottom: 0vh;
+    font-size: clamp(0.6rem, 1.5vmin, 0.9rem);
+    margin: 0;
+    white-space: nowrap; 
+    flex-shrink: 0; 
+    order: 1; 
+    margin-top: 0.5vh; 
 }
 
 #chartdiv {
@@ -111,6 +117,8 @@
     padding: 5px 10px;
     letter-spacing: 0.5px;
     font-weight: 600;
+    flex-shrink: 1; 
+    min-width: max-content; 
 }
 
 .restart-button:hover, .skip-button:hover {
@@ -122,5 +130,78 @@
 .button-text{
     color: white;
     font-weight: 500;
-    font-size: 1em;
+    font-size: 0.8em;
+}
+
+@media (min-width: 810px) and (min-height: 525px) {
+ 
+
+}
+
+@media (min-width: 1164px) and (min-height: 625px) {
+    .player-score-container, .question-text-container {
+        padding: 3vmin;
+    }
+    .question-up-section {
+        height: 70%;
+    }
+    .question-down-section {
+        height: 30%;
+    }
+    .map, .question {
+        height: 100%;
+    }
+    .map {
+        width: 70%;
+    }
+    .main-beginner, .main-medium, .main-advanced {
+        padding-top: 13vh;
+        padding-bottom: 13vh;
+    }
+    .beginner-container, .medium-container, .advanced-container {
+        height: 68vh;
+    }
+}
+
+@media (min-height: 690px) {
+    .question-text {
+        font-size: 2vmax;
+    }
+    .button-text {
+        font-size: 1em;
+    }
+    .question-up-section {
+        height: 60%;
+    }
+    .question-down-section {
+        height: 40%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .player-score-container, .question-text-container {
+        padding: 5vmin;
+    }
+    .question-up-section {
+        height: 80%;
+    }
+    .question-down-section {
+        height: 20%;
+    }
+    .beginner-container, .medium-container, .advanced-container {
+        height: 78vh;
+    }
+    .main-beginner, .main-medium, .main-advanced {
+        padding-top: 8vh;
+        padding-bottom: 8vh;
+    }
+    .map {
+        width: 70%;
+    }
+    .question {
+        width: 30%;
+    }
+    .to-skip{
+        margin-top: 1.8vh;
+    }
 }

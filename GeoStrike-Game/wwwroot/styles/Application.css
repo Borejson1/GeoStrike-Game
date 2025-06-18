@@ -10,6 +10,7 @@
 
 html, body {
     height: 100%;
+    overflow: hidden;
 }
 
 .app-container {
@@ -21,8 +22,8 @@ html, body {
     flex: 1;
     padding: 1rem 10vw;
     min-height: 94vh;
-    padding-top: 8vh;
-    padding-bottom: 8vh;
+    padding-top: 13vh;
+    padding-bottom: 13vh;
     width: 100%;
     position: relative;
 }
@@ -31,7 +32,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    height: 78vh;
+    height: 68vh;
 }
 
 .main-beginner {
@@ -81,4 +82,3 @@ html, body {
 #restart-advanced:hover, #skip-advanced:hover {
     background-color: rgb(140, 62, 239);
 }
-
