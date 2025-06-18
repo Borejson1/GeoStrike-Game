@@ -29,8 +29,9 @@
 }
 
 .navigation-logo {
-    width: 85px;
-    padding-right: 45px;
+    width: 40.5px;
+    height: 40.5px;
+    margin-right: 2.3vmax;
 }
 
 .navigation-more {
