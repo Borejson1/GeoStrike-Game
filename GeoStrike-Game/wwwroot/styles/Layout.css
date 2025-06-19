@@ -69,7 +69,42 @@
     text-shadow: 0 0 20px rgb(255, 64, 255), 0 0 30px rgb(230, 50, 230), 0 0 40px rgba(200, 30, 200, 0.7);
 }
 
-@media (min-width: 810px) and (min-height: 525px) {
+@media (max-width: 665px) {
+    .navigation-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        height: 6vh;
+        position: relative;
+    }
+    .navigation-logo {
+        width: 6.5vw;
+        height: 6.5vw;
+        margin-right: 0;
+        flex-shrink: 0;
+    }
+    .navigation-more {
+        display: none; 
+    }
+    .navigation-elements-container {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 1.5rem;
+    }
+    .navigation-element {
+        font-size: calc(12px + 1vw);
+        margin: 0;
+        padding: 0 0.5vw;
+        white-space: nowrap;
+    }
+}
 
-
+@media (max-width: 440px) {
+    .navigation-logo {
+        display: none;
+    }
 }
