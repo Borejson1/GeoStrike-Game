@@ -3,6 +3,7 @@
     am5.ready(function () {
 
         var root = am5.Root.new("chartdiv");
+        root._logo?.dispose();
 
         root.setThemes([
             am5themes_Animated.new(root)
