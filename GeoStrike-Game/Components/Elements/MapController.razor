@@ -13,8 +13,8 @@
         <div class="question-down-section">
             <p class="mode-class" id="@($"mode-{ModeService.CurrentMode}")">@ModeService.GameModeText</p>
             <div class="question-buttons">
-                <button class="restart-button" id=@ModeService.RestartButtonId ><div class="button-text" @onclick=RestartScore>Restart</div></button>
-                <button class="skip-button" id=@ModeService.SkipButtonId ><div class="button-text" @onclick=SkipQuestion>Skip Question</div></button>
+                <button class="restart-button" id=@ModeService.RestartButtonId @onclick=RestartGame><div class="button-text">Restart</div></button>
+                <button class="skip-button" id=@ModeService.SkipButtonId @onclick=SkipQuestion><div class="button-text">Skip Question</div></button>
                 <p class="to-skip">(@SkipsRemaining skips remaining)</p>
             </div>
         </div>
@@ -129,13 +129,13 @@
         }
         else
         {
-            PlayerGlobalScore = 0;
+            RestartGame();
         }
         SetQuestionValues();
         StateHasChanged();
     }
 
-    public void RestartScore()
+    public void RestartGame()
     {
         PlayerGlobalScore = 0;
         SkipsRemaining = 5;

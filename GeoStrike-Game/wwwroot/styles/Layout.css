@@ -32,6 +32,7 @@
     width: 40.5px;
     height: 40.5px;
     margin-right: 2.3vmax;
+/*    filter: brightness(95%) saturate(90%) contrast(100%);*/
 }
 
 .navigation-more {
