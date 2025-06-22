@@ -29,21 +29,3 @@ The application is fully responsive and supports a variety of screen sizes inclu
 * Blazor Web App
 * JavaScript
 * amCharts 5
-
-
-## Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/GeoStrike-Game.git
-   ```
-2. Navigate to the project directory:
-
-   ```bash
-   cd GeoStrike-Game
-   ```
-3. Open the project using your preferred IDE (e.g., Visual Studio).
-4. Build and run the application.
-
-Alternatively, open `index.html` in a browser if it's a static deployment.
