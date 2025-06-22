@@ -4,7 +4,6 @@ GeoStrike-Game is an interactive web application that challenges players with ge
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed nisi sapien. Proin tristique semper leo, nec ultrices nibh pretium in.
 
----
 
 ## Game Modes
 
@@ -12,13 +11,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed nisi s
 * 🟠 **Medium** – moderately challenging questions with more variety.
 * 🔴 **Advanced** – difficult and nuanced questions requiring strong geography knowledge.
 
----
 
 ## Screenshots
 
 *(Insert screenshots here)*
 
----
 
 ## Responsiveness
 
@@ -26,7 +23,6 @@ The application is fully responsive and supports a variety of screen sizes inclu
 
 *(Insert responsiveness screenshots here)*
 
----
 
 ## Technologies Used
 
@@ -34,7 +30,6 @@ The application is fully responsive and supports a variety of screen sizes inclu
 * JavaScript
 * amCharts 5
 
----
 
 ## Installation
 
