@@ -10,9 +10,9 @@ GeoStrike is an interactive quiz app that helps users explore the world through 
 
 ## Screenshots
 
-![Beginner](wwwroot/images/readme/beginner.png)
+![Beginner](GeoStrike-Game/wwwroot/images/readme/beginner.png)
 
-![Advanced](wwwroot/images/readme/advanced.png)
+![Advanced](GeoStrike-Game/wwwroot/images/readme/advanced.png)
 
 ## Responsiveness
 
