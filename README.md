@@ -1,6 +1,6 @@
 # GeoStrike-Game
 
-GeoStrike is an interactive quiz app that helps users explore the world through five categories: Geography, History, Nature, Culture, and General Knowledge. The questions range from very easy to challenging, even for enthusiasts, so everyone can learn at their own pace while competing for high scores - blending education with friendly competition.
+GeoStrike is an interactive quiz app that helps users explore the world through five categories: Geography, History, Nature, Culture, and General Knowledge. The questions range from very easy to challenging, even for enthusiasts, so everyone can learn at their own pace while competing for high scores, blending education with friendly competition.
 
 ## Game Modes
 
