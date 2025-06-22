@@ -18,8 +18,8 @@ GeoStrike is an interactive quiz app that helps users explore the world through 
 
 The app is fully responsive and works on desktops, tablets, and phones.
 
-[iPad-Mini](GeoStrike-Game/wwwroot/images/readme/ipad-mini.png)
-[iPhone-10](GeoStrike-Game/wwwroot/images/readme/iphone-10.png)
+[iPad-Mini](GeoStrike-Game/wwwroot/images/readme/ipad-mini.png)<br>
+[iPhone X](GeoStrike-Game/wwwroot/images/readme/iphone-10.png)
 
 ## Technologies Used
 
