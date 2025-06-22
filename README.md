@@ -4,7 +4,7 @@ GeoStrike-Game is an interactive web application that challenges players with ge
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed nisi sapien. Proin tristique semper leo, nec ultrices nibh pretium in.
 
----
+***
 
 ## Game Modes
 
