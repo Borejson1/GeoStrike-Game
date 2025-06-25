@@ -24,6 +24,7 @@
         }));
 
         polygonSeries.mapPolygons.template.events.on("click", function (ev) {
+            playSound("map-click-sound", 0.50);
             var countryName = ev.target.dataItem.dataContext.name;
             console.log("Pressed on: ", countryName);
             dotNetHelper.invokeMethodAsync("CheckAnswer", countryName);

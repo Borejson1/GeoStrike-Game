@@ -18,5 +18,5 @@ public class ModeService
     public string GameModeText => $"{char.ToUpper(CurrentMode[0])}{CurrentMode.Substring(1)} Mode";
     public string JsonDataPath => $"wwwroot/data/{CurrentMode}.json";
     public string ScoreLoading => $"score-{CurrentMode}";
-    public string LogoStyle => $"images/logo-{CurrentMode}.png";
+    public string LogoStyle => $"images/logo/logo-{CurrentMode}.png";
 }

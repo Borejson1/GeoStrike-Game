@@ -13,8 +13,9 @@
         <div class="question-down-section">
             <p class="mode-class" id="@($"mode-{ModeService.CurrentMode}")">@ModeService.GameModeText</p>
             <div class="question-buttons">
-                <button class="restart-button" id=@ModeService.RestartButtonId @onclick=RestartGame><div class="button-text">Restart</div></button>
-                <button class="skip-button" id=@ModeService.SkipButtonId @onclick=SkipQuestion><div class="button-text">Skip Question</div></button>
+                <audio id="button-click-sound" src="sounds/ui-button.wav"></audio>
+                <button class="restart-button" id=@ModeService.RestartButtonId @onclick=ClickAndRestart><div class="button-text">Restart</div></button>
+                <button class="skip-button" id=@ModeService.SkipButtonId @onclick=ClickAndSkip><div class="button-text">Skip Question</div></button>
                 <p class="to-skip">(@SkipsRemaining skips remaining)</p>
             </div>
         </div>
@@ -24,6 +25,7 @@
         <p class="player-best-score"><i id="player-best-score-icon" class="fa-solid fa-ranking-star"></i>Highest score: @PlayerBestScore</p>
     </div>
 </div>
+<audio id="map-click-sound" src="sounds/quiz-select.wav"></audio>
 <div class="map">
     <div id="chartdiv"></div>
 </div>
@@ -37,7 +39,7 @@
     public string QuestionCategory = "";
     public string QuestionText = "";
 
-    private DotNetObjectReference<MapController>? dotNetHelper;
+    private DotNetObjectReference<GlobeController>? dotNetHelper;
     private List<string> usedQuestions = new List<string>();
 
     private bool mapInitialized = false;
@@ -164,6 +166,18 @@
         {
             PlayerBestScore = result.Value;
         }
+    }
+
+    private async Task ClickAndRestart()
+    {
+        await JS.InvokeVoidAsync("playSound", "button-click-sound", 0.70);
+        RestartGame();
+    }
+
+    private async Task ClickAndSkip()
+    {
+        await JS.InvokeVoidAsync("playSound", "button-click-sound", 0.70);
+        SkipQuestion();
     }
 
     public async ValueTask DisposeAsync()
